@@ -1,12 +1,12 @@
 package org.example.PP16.dao;
-
+import dao.UserDao;
 import model.User;
 import org.springframework.stereotype.Repository;
 import jakarta.persistence.*;
 import java.util.List;
 
 @Repository
-public class UserDaoImpl implements dao.UserDao {
+public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
     private EntityManager entityManager;
